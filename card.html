@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Project Support Card</title>
+    
+    <!-- Nu am reusit sa gasesc fontul folosit in design si am folosit Raleway care mi se pare cel mai aproape din Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="card rounded">
+        <div class="card-head rounded"><span class="total-remaining-amount">$167</span> still needed for this project</div>
+
+        <div class="card-main">
+            <progress id="projectCompletionState" value="75" max="100"></progress> <!-- value="75" se schimba in functie de numarul de zile -->
+            <div class="desc">
+                <p><span class="colored">Only 3 days left</span> to fund this project.</p>
+                <p>Join the <span id="existingDonors">42</span> other donors who have already supported this project. Every dollar helps.</p>
+                <form class="donation-form">
+                    <div class="form-elem rounded donation-amount-field">
+                        <label for="donation-amount" class="currency-before" id="donation-currency">$</label>
+                        <input type="text" name="donation-amount" value="50" required>
+                        <!-- din design se intelege ca valoarea de $50 este deja completata, nu arata a placeholder -->
+                    </div>
+                    <button class="btn btn-send rounded form-elem" type="submit">Give Now</button>
+                </form>
+                <a href="#" class="linked-info">Why give $<span class="donation-amount">50</span>?</a>
+            </div>
+        </div>
+
+        <div class="card-footer">
+            <a href="#" class="btn btn-outline rounded">Save for later</a>
+            <a href="#" class="btn btn-outline rounded">Tell your friends</a>
+        </div>
+    </div>
+</body>
+
+</html>

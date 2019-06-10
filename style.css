@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', Arial, sans-serif;
+    /*     background: #000; */
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.rounded {
+    border-radius: 5px;
+}
+
+.colored {
+    color: #ef5f3c;
+}
+
+.btn-outline {
+    display: block;
+    color: #666;
+    border: 1px solid #ccc;
+    padding: 15px 20px;
+    font-weight: 600;
+    height: 52px;
+}
+
+.btn-outline:hover {
+    transition: all 150ms ease;
+    border-color: #aaa;
+}
+
+.card {
+    width: 467px;
+    margin: auto;
+    background: #fff;
+    text-align: center;
+    padding: 25px 30px;
+    border: 1px solid #ccc;
+    margin-top: 25px;
+}
+
+.card-head {
+    font-size: 1.3rem;
+    background: #333;
+    color: #fff;
+    padding: 20px 30px;
+    position: relative;
+}
+
+.card-head:after {
+    content: " ";
+    width: 0px;
+    height: 0px;
+    display: inline-block;
+    position: absolute;
+    bottom: -10px;
+    right: 30px;
+    border-top: 10px solid #333;
+    ;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+
+.card-head span {
+    font-weight: 600;
+}
+
+.card-main {
+    margin-top: 15px;
+}
+
+.card-main .desc {
+    padding: 20px 30px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+progress {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+progress::-webkit-progress-bar {
+    background: none;
+}
+
+progress::-webkit-progress-value {
+    background: #ef5f3c;
+    height: 15px;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.desc {
+    text-align: left;
+}
+
+.desc p {
+    color: #666;
+    font-size: 1.15rem;
+    line-height: 1.8rem;
+}
+
+.desc p span {
+    font-weight: 600;
+}
+
+.donation-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-elem {
+    width: 50%;
+    border: 1px solid #ccc;
+    height: 66px;
+    margin-right: 25px;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.form-elem:last-child {
+    margin-right: 0;
+}
+
+.donation-form .btn {
+    background: #1cbc2c;
+    color: #fff;
+    border-color: #1cbc2c;
+}
+
+.donation-form .btn:hover {
+    background-color: #1a9e27;
+}
+
+.donation-amount-field {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.donation-amount-field:hover,
+.donation-amount-field:focus-within {
+    border-color: #aaa;
+}
+
+.donation-amount-field input {
+    border: none;
+    width: 100%;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    outline: none;
+}
+
+.currency-before {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #666;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+.linked-info {
+    display: block;
+    font-style: italic;
+    color: #038dff;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.linked-info:hover {
+    color: #666;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card-footer .btn {
+    flex: 1;
+    margin-right: 25px;
+}
+
+.card-footer .btn:last-child {
+    margin-right: 0;
+}
